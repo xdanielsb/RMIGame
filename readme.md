@@ -6,22 +6,11 @@
 
 <img src="assets/demo.gif">
 
-### Server
-- control
-- model
-- remote
-- transverse
-- view
+### Model
+This model does not show the implementation of the interfaces, to have more details please go to [Interfaces](src/server/model/)
 
-<img src="assets/ServerModel.png">
-
-
-### Client
-- control
-- view
-
-<img src="assets/ClientModel.png">
-
+<img src="assets/Model.png">
 
 ### Intructions
-- create a jar with the packages /model and /remote of the server and add them to the client
+- Run the server
+- Run as many clients that connects to the server
