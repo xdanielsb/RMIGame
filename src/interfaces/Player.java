@@ -6,32 +6,31 @@ import java.util.List;
 
 public interface Player extends Serializable, Remote {
 
-	static final long serialVersionUID = 1L;
-	
-	public int getId();
+  static final long serialVersionUID = 1L;
 
-	public String getName();
-	
-	public boolean isAlive();
+  public int getId();
 
-	public void setAlive(boolean alive);
+  public String getName();
 
-	public float getX();
+  public boolean isAlive();
 
-	public float getY();
+  public void setAlive(boolean alive);
 
-	public int getSize();
+  public float getX();
 
-	public float getRadius();
+  public float getY();
 
-	public List<PlayerCell> getCells();
-	
-	public Team getTeam();
-	
-	public void setTeam(Team team);
-	
-	public void addCell(PlayerCell cell);
-	
-	public boolean removeCell(PlayerCell cell);
+  public int getSize();
 
+  public float getRadius();
+
+  public List<PlayerCell> getCells();
+
+  public Team getTeam();
+
+  public void setTeam(Team team);
+
+  public void addCell(PlayerCell cell);
+
+  public boolean removeCell(PlayerCell cell);
 }

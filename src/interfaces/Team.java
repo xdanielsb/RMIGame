@@ -7,26 +7,25 @@ import java.util.List;
 
 public interface Team extends Serializable, Remote {
 
-	static final long serialVersionUID = 1L;
+  static final long serialVersionUID = 1L;
 
-	public String getTeamName();
+  public String getTeamName();
 
-	public Color getColor();
+  public Color getColor();
 
-	public int getScore();
-	
-	public void addPlayer(Player player);
-	
-	public List<Player> getPlayers();
+  public int getScore();
 
-	public boolean removePlayer(Player player);
-	
-	public void addToScore(int amount);
-	
-	public int getSpawnX();
-	
-	public int getSpawnY();
+  public void addPlayer(Player player);
 
-	public Object getBell();
+  public List<Player> getPlayers();
 
+  public boolean removePlayer(Player player);
+
+  public void addToScore(int amount);
+
+  public int getSpawnX();
+
+  public int getSpawnY();
+
+  public Object getBell();
 }

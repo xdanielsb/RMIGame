@@ -7,38 +7,37 @@ import java.util.List;
 
 public interface Board extends Serializable, Remote {
 
-	static final long serialVersionUID = 1L;
+  static final long serialVersionUID = 1L;
 
-	public int getBoardWidth();
+  public int getBoardWidth();
 
-	public int getBoardHeight();
-	
-	public void addTeam(Team team);
-	
-	public Player getPlayer(int id);
+  public int getBoardHeight();
 
-	public void addPlayer(Player player);
-	
-	public void removePlayer(Player player);
-	
-	public Collection<Player> getPlayers();
+  public void addTeam(Team team);
 
-	public List<Team> getTeams();
+  public Player getPlayer(int id);
 
-	public List<Food> getFoods();
+  public void addPlayer(Player player);
 
-	public List<SpikeCell> getSpikeCells();
+  public void removePlayer(Player player);
 
-	public Team getWinners();
-	
-	public void setWinner();
-	
-	public void addFoods(List<Food> foods);
-	
-	public boolean removeFood(Food food);
-	
-	public void addSpike(SpikeCell spike);
-	
-	public boolean removeSpike(SpikeCell spike);
+  public Collection<Player> getPlayers();
 
+  public List<Team> getTeams();
+
+  public List<Food> getFoods();
+
+  public List<SpikeCell> getSpikeCells();
+
+  public Team getWinners();
+
+  public void setWinner();
+
+  public void addFoods(List<Food> foods);
+
+  public boolean removeFood(Food food);
+
+  public void addSpike(SpikeCell spike);
+
+  public boolean removeSpike(SpikeCell spike);
 }

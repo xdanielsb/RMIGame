@@ -6,36 +6,35 @@ import java.rmi.Remote;
 
 public interface CoordinateObject extends Comparable<CoordinateObject>, Serializable, Remote {
 
-	static final long serialVersionUID = 1L;
+  static final long serialVersionUID = 1L;
 
-	public float getX();
-	
-	public void setX(float x);
+  public float getX();
 
-	public float getY();
+  public void setX(float x);
 
-	public void setY(float y);
-	
-	public int getSize();
+  public float getY();
 
-	public void setSize(int size);
-	
-	public float getRadius();
+  public void setY(float y);
 
-	public float getInertiaX();
-	
-	public void setInertiaX(float inertiaX);
-	
-	public float getInertiaY();
+  public int getSize();
 
-	public void setInertiaY(float inertiaY);
-	
-	public Color getColor();
-	
-	public float getSpeedX();
+  public void setSize(int size);
 
-	public float getSpeedY();
-	
-	public void applyMouvement();
-	
+  public float getRadius();
+
+  public float getInertiaX();
+
+  public void setInertiaX(float inertiaX);
+
+  public float getInertiaY();
+
+  public void setInertiaY(float inertiaY);
+
+  public Color getColor();
+
+  public float getSpeedX();
+
+  public float getSpeedY();
+
+  public void applyMouvement();
 }
